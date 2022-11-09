@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Roboto:wght@100;300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  font-size: 28px;
+  font-family: "PT Sans", sans-serif;
+  line-height: 48px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 40px 0;
+}
+h1 {
+}
+h2 {
+  font-size: 36px;
+  font-family: "Francois One", sans-serif;
+  letter-spacing: 4px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 30px;
+  font-family: "Farro", sans-serif;
+  font-weight: lighter;
+  line-height: 30px;
+}
+
+.button {
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.bottom_line {
+  text-decoration: underline;
+}
+
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
+.gray {
+  background-color: #dadada;
+}
+.back_image {
+  background-image: url(./img/bg-picture.png);
+  background-size: cover;
+  width: 760px;
+  height: 760px;
+  position: fixed;
+  top: 70px;
+  right: 0px;
+  object-fit: cover;
+  z-index: -1;
+}
+/*======================== header ====================================*/
+header {
+  padding: 15px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding-bottom: 35px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation__item {
+  margin-right: 10px;
+}
+
+.navigation__item:last-child {
+  margin-right: 0;
+}
+
+.language {
+  font-family: "Tourney", cursive;
+  font-size: 22px;
+  margin-right: 50px;
+}
+.navigation__item a {
+  font-family: "Staatliches", cursive;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/*========================================= section ===========================*/
+
+.section {
+  position: relative;
+}
+
+.section h2 {
+  margin: 0 0 40px 120px;
+}
+
+.section::before {
+  content: url(./img/section.png);
+  height: 10px;
+  width: 100px;
+  position: absolute;
+  top: 15px;
+}
+
+.brand_list {
+  padding: 40px 0;
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  margin-bottom: 70px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* .brand_list__item:nth-child(1) {
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: 1s;
+}
+
+.brand_list__item:nth-child(1):hover {
+  transform: rotateX(-180deg);
+  transform-style: preserve-3d;
+  height: 100%;
+}
+
+.brand_list__item__front {
+  background-image: url(./img/brands/facebook.png);
+  width: 270px;
+  height: 180px;
+  backface-visibility: hidden;
+
+  /* transform: rotateY(180deg); */ /*
+}
+.brand_list__item__back {
+  background-image: url(./img/brands/hover/facebook_hover.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+
+  transform: rotateX(-180deg);
+  backface-visibility: hidden;
+
+  width: 100%;
+  height: 100%;
+} */
+/*=============== animation_start =========================*/
+.brand_list__item {
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: 1s;
+}
+
+.brand_list__item:hover {
+  transform: rotateX(-180deg);
+  transform-style: preserve-3d;
+  height: 100%;
+}
+
+.brand_list__item__front {
+  width: 270px;
+  height: 180px;
+  backface-visibility: hidden;
+
+  /* transform: rotateY(180deg); */
+}
+.brand_list__item__back {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+
+  transform: rotateX(-180deg);
+  backface-visibility: hidden;
+
+  width: 100%;
+  height: 100%;
+}
+
+/*=============== animation_end =========================*/
+
+.brand_list__item:nth-child(1) .brand_list__item__front {
+  background-image: url(./img/brands/facebook.png);
+
+  /* transform: rotateY(180deg); */
+}
+.brand_list__item:nth-child(1) .brand_list__item__back {
+  background-image: url(./img/brands/hover/facebook_hover.png);
+}
+
+.brand_list__item:nth-child(2) .brand_list__item__front {
+  background-image: url(./img/brands/instagram.png);
+
+  /* transform: rotateY(180deg); */
+}
+.brand_list__item:nth-child(2) .brand_list__item__back {
+  background-image: url(./img/brands/hover/instagram.png);
+}
+
+.brand_list__item:nth-child(3) .brand_list__item__front {
+  background-image: url(./img/brands/shopify.png);
+
+  /* transform: rotateY(180deg); */
+}
+.brand_list__item:nth-child(3) .brand_list__item__back {
+  background-image: url(./img/brands/hover/shopify.png);
+}
+
+.brand_list__item:nth-child(4) .brand_list__item__front {
+  background-image: url(./img/brands/skype.png);
+
+  /* transform: rotateY(180deg); */
+}
+.brand_list__item:nth-child(4) .brand_list__item__back {
+  background-image: url(./img/brands/hover/skype.png);
+}
+
+.brand_list__item:nth-child(5) .brand_list__item__front {
+  background-image: url(./img/brands/pinterest.png);
+
+  /* transform: rotateY(180deg); */
+}
+.brand_list__item:nth-child(5) .brand_list__item__back {
+  background-image: url(./img/brands/hover/pinterest.png);
+}
+
+.brand_list__item:nth-child(6) .brand_list__item__front {
+  background-image: url(./img/brands/wix.png);
+
+  /* transform: rotateY(180deg); */
+}
+.brand_list__item:nth-child(6) .brand_list__item__back {
+  background-image: url(./img/brands/hover/wix.png);
+}
+
+.brand_list__item:nth-child(7) .brand_list__item__front {
+  background-image: url(./img/brands/saleforse.png);
+
+  /* transform: rotateY(180deg); */
+}
+.brand_list__item:nth-child(7) .brand_list__item__back {
+  background-image: url(./img/brands/hover/saleforse.png);
+}
+
+.brand_list__item:nth-child(8) .brand_list__item__front {
+  background-image: url(./img/brands/soundcloud.png);
+
+  /* transform: rotateY(180deg); */
+}
+.brand_list__item:nth-child(8) .brand_list__item__back {
+  background-image: url(./img/brands/hover/soundcloud.png);
+}
