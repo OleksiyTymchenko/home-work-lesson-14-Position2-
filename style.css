@@ -200,7 +200,7 @@ header {
   transition: 1s;
 }
 
-.brand_list__item:hover {
+.brand_list__item__box:hover .brand_list__item {
   transform: rotateX(-180deg);
   transform-style: preserve-3d;
   height: 100%;
@@ -239,65 +239,65 @@ header {
   background-image: url(./img/brands/hover/facebook_hover.png);
 }
 
-.brand_list__item:nth-child(2) .brand_list__item__front {
+.brand_list__item__box:nth-child(2) .brand_list__item__front {
   background-image: url(./img/brands/instagram.png);
 
   /* transform: rotateY(180deg); */
 }
-.brand_list__item:nth-child(2) .brand_list__item__back {
+.brand_list__item__box:nth-child(2) .brand_list__item__back {
   background-image: url(./img/brands/hover/instagram.png);
 }
 
-.brand_list__item:nth-child(3) .brand_list__item__front {
+.brand_list__item__box:nth-child(3) .brand_list__item__front {
   background-image: url(./img/brands/shopify.png);
 
   /* transform: rotateY(180deg); */
 }
-.brand_list__item:nth-child(3) .brand_list__item__back {
+.brand_list__item__box:nth-child(3) .brand_list__item__back {
   background-image: url(./img/brands/hover/shopify.png);
 }
 
-.brand_list__item:nth-child(4) .brand_list__item__front {
+.brand_list__item__box__box:nth-child(4) .brand_list__item__front {
   background-image: url(./img/brands/skype.png);
 
   /* transform: rotateY(180deg); */
 }
-.brand_list__item:nth-child(4) .brand_list__item__back {
+.brand_list__item__box:nth-child(4) .brand_list__item__back {
   background-image: url(./img/brands/hover/skype.png);
 }
 
-.brand_list__item:nth-child(5) .brand_list__item__front {
+.brand_list__item__box:nth-child(5) .brand_list__item__front {
   background-image: url(./img/brands/pinterest.png);
 
   /* transform: rotateY(180deg); */
 }
-.brand_list__item:nth-child(5) .brand_list__item__back {
+.brand_list__item__box:nth-child(5) .brand_list__item__back {
   background-image: url(./img/brands/hover/pinterest.png);
 }
 
-.brand_list__item:nth-child(6) .brand_list__item__front {
+.brand_list__item__box:nth-child(6) .brand_list__item__front {
   background-image: url(./img/brands/wix.png);
 
   /* transform: rotateY(180deg); */
 }
-.brand_list__item:nth-child(6) .brand_list__item__back {
+.brand_list__item__box:nth-child(6) .brand_list__item__back {
   background-image: url(./img/brands/hover/wix.png);
 }
 
-.brand_list__item:nth-child(7) .brand_list__item__front {
+.brand_list__item__box:nth-child(7) .brand_list__item__front {
   background-image: url(./img/brands/saleforse.png);
 
   /* transform: rotateY(180deg); */
 }
-.brand_list__item:nth-child(7) .brand_list__item__back {
+.brand_list__item__box:nth-child(7) .brand_list__item__back {
   background-image: url(./img/brands/hover/saleforse.png);
 }
 
-.brand_list__item:nth-child(8) .brand_list__item__front {
+.brand_list__item__box:nth-child(8) .brand_list__item__front {
   background-image: url(./img/brands/soundcloud.png);
 
   /* transform: rotateY(180deg); */
 }
-.brand_list__item:nth-child(8) .brand_list__item__back {
+.brand_list__item__box:nth-child(8) .brand_list__item__back {
   background-image: url(./img/brands/hover/soundcloud.png);
 }
